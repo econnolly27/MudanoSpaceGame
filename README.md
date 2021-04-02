@@ -1,3 +1,5 @@
+NB: This repository has been pulled from GitLab, so some features may not be set up or compatible with GitHub.
+
 Mudano Space Game
 
 By Jamie Allan, Erin Connolly, Hugh Merrell, Eli Soare, Callum Watson
