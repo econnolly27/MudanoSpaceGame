@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>SE_04</RootNamespace>
+    <ProjectGUID>22d46d9d-56c9-4fff-b100-8d26ce1a9d8f</ProjectGUID>
+    <ApplicationIcon>se04logo_jBv_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections.NonGeneric" Version="4.3.0" />
+    <PackageReference Include="Elasticsearch.Net" Version="7.5.1" />
+    <PackageReference Include="NEST" Version="7.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connect\ConnectServer\ConnectServer.csproj" />
+    <ProjectReference Include="..\ElasticSearch\ElasticSearch.csproj" />
+    <ProjectReference Include="..\Maths\Maths.csproj" />
+  </ItemGroup>
+
+</Project>

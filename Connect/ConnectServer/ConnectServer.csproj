@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ProjectGuid>a589b0fd-cb59-4576-acb0-714f2be8df66</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connect\Connect.csproj" />
+    <ProjectReference Include="..\..\ElasticSearch\ElasticSearch.csproj" />
+  </ItemGroup>
+
+</Project>

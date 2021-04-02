@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <ProjectGUID>3aa2a464-72b6-4e88-a2e2-1a70166f1b21</ProjectGUID>
+    <ApplicationIcon>se04logo_jBv_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connect\Connect.csproj" />
+  </ItemGroup>
+
+</Project>

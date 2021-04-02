@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package connect;
+
+// The service definition.
+service Interact {
+  rpc Interaction (Request) returns (Reply) {}
+  rpc Login (LoginRequest) returns (LoginReply) {}
+  rpc UpdateUsers (ServerStatus) returns (Confirmation) {}
+}
+
+// Request message containing the user's name id and the command
+message Request {
+  string user = 1;
+  int32 id = 2;
+  string command = 3;
+}
+// Response message containing any info that should be returned
+message Reply {
+  string message = 1;
+}
+
+
+// Request message used for logging in extensible with a password field if required
+message LoginRequest {
+  string username = 1;
+}
+// Response message containing whether the login is successful or not. The ip will be sent to the client to redirect it to the server
+message LoginReply {
+  string result = 1;
+  string address = 2;
+}
+
+
+// Sent by the server to the load balancer to make it aware of its number of active users
+message ServerStatus {
+  string address = 1;
+  int32 users = 2;
+  string initialConnection = 3;
+}
+// Returned by the load balancer to confirm the interaction
+message Confirmation {
+  string received = 1;
+}

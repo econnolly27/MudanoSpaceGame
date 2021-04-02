@@ -1,0 +1,4 @@
+-run instance of elasticsearch database
+C# Imports: 	Elasticsearch.Net;
+		Newtonsoft.Json;
+		Nest;

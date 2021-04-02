@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.5</TargetFramework>
+    <ProjectGUID>41b94d65-e98a-419d-b996-a4a17f139f24</ProjectGUID>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.8.0" />
+    <PackageReference Include="Grpc" Version="2.23.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.23.0" PrivateAssets="All" />
+    <PackageReference Include="Google.Protobuf.Tools" Version="3.11.3"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="../protos/connect.proto" Link="connect.proto" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <ProjectGUID>ce00435f-f4f4-4126-9c95-59cf34bdad63</ProjectGUID>
+    <ApplicationIcon>se04logo_jBv_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Connect\Connect.csproj" />
+    <ProjectReference Include="..\..\ElasticSearch\ElasticSearch.csproj" />
+  </ItemGroup>
+
+</Project>
